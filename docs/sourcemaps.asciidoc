@@ -138,7 +138,7 @@ curl http://localhost:8200/assets/v1/sourcemaps -X POST \
     -F sourcemap="@./dist/app.min.js.map" \
     -F service_version="$SERVICEVERSION" \
     -F bundle_filepath="http://localhost/app.min.js" \
-    -F service_name="myService"
+    -F service_name="myService" \
     -H "Authorization: ApiKey <token>" <2>
 ----
 <1> This example uses the version from `package.json`.
